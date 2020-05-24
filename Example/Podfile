@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JSFunction_Example' do
+  pod 'JSFunction', :path => '../'
+
+  target 'JSFunction_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

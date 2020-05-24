@@ -1,0 +1,6 @@
+framework module JSFunction {
+  umbrella header "JSFunction-umbrella.h"
+
+  export *
+  module * { export * }
+}

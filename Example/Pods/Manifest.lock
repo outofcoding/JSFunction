@@ -1,0 +1,16 @@
+PODS:
+  - JSFunction (0.1.0)
+
+DEPENDENCIES:
+  - JSFunction (from `../`)
+
+EXTERNAL SOURCES:
+  JSFunction:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JSFunction: 6dca6c20efd501a490801a431147e61c81eb4fad
+
+PODFILE CHECKSUM: 030f94489db2ccf5eda97fddec77f83bc4f083d5
+
+COCOAPODS: 1.8.4

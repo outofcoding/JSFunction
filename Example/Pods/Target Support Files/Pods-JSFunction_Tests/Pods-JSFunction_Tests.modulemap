@@ -1,0 +1,6 @@
+framework module Pods_JSFunction_Tests {
+  umbrella header "Pods-JSFunction_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

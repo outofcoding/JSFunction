@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Test</title>
+    <style type="text/css">
+        #container {
+            margin-top: 30pt;
+        }
+        button {
+            background-color: gray;
+            border: none;
+            padding: 10pt;
+            font-size: 20pt;
+            width: 100%;
+        }
+    </style>
+    <script type="text/javascript">
+        function message1() {
+            var message = 'message1()';
+            window.webkit.messageHandlers.test.postMessage(message);
+        }
+    
+        function message2() {
+            var message = 'message2(My Name is DH)';
+            window.webkit.messageHandlers.test.postMessage(message);
+        }
+    
+        function message3() {
+            var message = 'message3(My Name is DH, 29 years old)';
+            window.webkit.messageHandlers.test.postMessage(message);
+        }
+    
+        function json() {
+            var json = '{"name": "DH", "age": 29}';
+            var message = 'json(' + json + ')';
+            window.webkit.messageHandlers.test.postMessage(message);
+        }
+    </script>
+</head>
+<body>
+    <div id='container' align='center'>
+        <button onclick='message1();'>Call No Param</button></br>
+        <button onclick='message2();' style='margin-top: 10px'>Call 1Param</button></br>
+        <button onclick='message3();' style='margin-top: 10px'>Call 2Param</button></br>
+        <button onclick='json();' style='margin-top: 10px'>Call JSON</button></br>
+    </div>
+</body>
+</html>
